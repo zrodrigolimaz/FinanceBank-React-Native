@@ -7,12 +7,12 @@ import {
 } from 'react-native';
 
 
-export default function Accountvalue() {
+export default function Accountvalue({saldo}) {
     return (
         <View style={styles.container}>
             <View style={styles.content}>
                 <Text style={styles.currentSymbol}>R$</Text>
-                <Text style={styles.value}>60.000,00</Text>
+                <Text style={styles.value}>{saldo}</Text>
             </View>
             <View style={styles.hide}>
                 <Image
