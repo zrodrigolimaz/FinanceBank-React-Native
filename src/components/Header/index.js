@@ -8,11 +8,13 @@ import {
 
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 11 : 32;
 
-export default function Header () {
+export default function Header ({ name }) {
     return (
         <View style={styles.container}>
         <View style={styles.content}>
-            <Text style={styles.nomeUsuario}>Rodrigo Lima</Text>
+            <Text style={styles.nomeUsuario}>
+                 {name}
+            </Text>
             <Text style={styles.contaCorrente}>
                 Conta Corrente
             </Text>
@@ -39,6 +41,8 @@ const styles = StyleSheet.create({
     },
     nomeUsuario:{
     fontSize:13,
+    fontWeight:'bold',
+
 
     },
     contaCorrente: {
