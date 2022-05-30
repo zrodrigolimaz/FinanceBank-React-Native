@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <View style ={styles.container}>
       <Header name="Rodrigo Lima"></Header>
-      <Accountvalue saldo="60.000,00"/>
+      <Accountvalue saldo="60.000,00" />
       <Menu/>
       <Text style={styles.title}>TRANSAÇÕES RECENTES</Text>
       <FlatList style={styles.list}
@@ -80,7 +80,10 @@ const styles = StyleSheet.create({
     fontSize:13,
     fontWeight:'bold',
     marginStart: 42,
-    color:'#8F99A3'
+    color:'#8F99A3',
+    marginBottom:14,
+    marginTop:14,
+    marginRight:14,
     
   },
   list:{
