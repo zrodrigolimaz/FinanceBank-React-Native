@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, StyleSheet,Text,FlatList } from 'react-native';
 import Header from '../../components/Header'
 import Accountvalue from '../../components/Accountvalue'
@@ -53,6 +53,9 @@ const list = [
 
 
 const Home = () => {
+  const [showValue, setShowValue] = useState(false)
+
+
   return (
     <View style ={styles.container}>
       <Header name="Rodrigo Lima"></Header>
