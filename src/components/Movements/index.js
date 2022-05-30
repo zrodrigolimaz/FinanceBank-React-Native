@@ -14,7 +14,10 @@ export default function Movements( {data} ) {
        
        <View style={styles.content}>
            <Text style={styles.label}>{data.label}</Text>
-           <Text style={styles.value}>{data.value}</Text>
+           <Text 
+           style={data.type ==='receita' ? styles.value : styles.expenses}
+           >
+                {data.type === 'receita' ? `R$ ${data.value}` : `R$ - ${data.value}`}</Text>
            
        </View>
    </TouchableOpacity>
@@ -44,7 +47,12 @@ const styles = StyleSheet.create ({
     },
     value: {
         fontSize:16,
-        // color:'#2ecc71',
+        color:'#132D54',
+        fontWeight:'bold',
+    },
+    expenses:{
+        fontSize:16,
+        color: '#e74c3c',
         fontWeight:'bold',
     }
 
