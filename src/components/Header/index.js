@@ -28,15 +28,15 @@ export default function Header ({ name }) {
 const styles = StyleSheet.create({
     container:{
         backgroundColor:'#2393F7',
-        paddingTop: 12,
+        paddingTop: 2,
         flexDirection:'row',
-        paddingStart:16,
+        paddingStart:7,
         paddingEnd:16,
-        paddingBottom:12,
+        paddingBottom:3,
     },
     content: {
         flex: 1,
-    padding: 20,
+    padding: 15,
         
     },
     nomeUsuario:{
