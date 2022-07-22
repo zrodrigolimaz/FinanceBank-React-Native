@@ -9,46 +9,54 @@ import {
 } from 'react-native';
 
 
-export default function Accountvalue({ }) {
+export default function Menu({ }) {
     return (
-        <ScrollView style={[styles.container] } horizontal = {true} showsHorizontalScrollIndicator= {false} >
-            <TouchableOpacity style={styles.actionButton}>
-                <View style={styles.areButton}>
-                    <Image source={require('../../assets/cartao.png')} />
+        <ScrollView style ={styles.container} horizontal={true} showsHorizontalScrollIndicator={false}>
+           
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style={styles.areaButton}>
+                <Image source={require('../../assets/cartao.png')} />
                 </View>
-                <Text style={styles.labelButton}>Cartão</Text>
+                <Text style= {styles.labelButton}>Cartão</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.actionButton}>
-                <View style={styles.areButton}>
-                    <Image source={require('../../assets/boleto.png')} />
+           
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style={styles.areaButton}>
+                <Image source={require('../../assets/Boleto.png')} />
                 </View>
-                <Text style={styles.labelButton}>Boleto</Text>
+                <Text style= {styles.labelButton}>Boleto</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.actionButton}>
-                <View style={styles.areButton}>
-                    <Image source={require('../../assets/transferir.png')} />
+           
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style={styles.areaButton}>
+                <Image source={require('../../assets/Gastos.png')} />
                 </View>
-                <Text style={styles.labelButton}>Transferir</Text>
+                <Text style= {styles.labelButton}>Gastos</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.actionButton}>
-                <View style={styles.areButton}>
-                    <Image source={require('../../assets/gastos.png')} />
+            
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style={styles.areaButton}>
+                <Image source={require('../../assets/receber.png')} />
                 </View>
-                <Text style={styles.labelButton}>Gastos</Text>
+                <Text style= {styles.labelButton}>Receber</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.actionButton}>
-                <View style={styles.areButton}>
-                    <Image source={require('../../assets/receber.png')} />
+
+            <TouchableOpacity style = {styles.actionButton}>
+                <View style={styles.areaButton}>
+                <Image source={require('../../assets/Transferir.png')} />
                 </View>
-                <Text style={styles.labelButton}>Receber</Text>
+                <Text style= {styles.labelButton}>Transferir</Text>
             </TouchableOpacity>
+            
         </ScrollView>
+
+        
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: "#FFFFFF",
+        backgroundColor: "#FFFFFF",
         maxHeight:84,
         paddingStart: 14,
         paddingEnd: 14,
@@ -59,7 +67,7 @@ const styles = StyleSheet.create({
         alignItems:"center",
         marginRight:33,
     },
-    areButton: {
+    areaButton: {
         backgroundColor:'#2393F7',
         borderRadius:10,
         height:48,

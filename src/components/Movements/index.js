@@ -21,7 +21,7 @@ export default function Movements({ data }) {
                         style={data.type === 'receita' ? styles.value : styles.expenses}
                     >
                          {data.type === 'receita' ? `R$ ${data.value}` : `R$ - ${data.value}`}
-                        </Text>
+                    </Text>
                 ): (
                     <View style={styles.skeleton} ></View>
                 )}

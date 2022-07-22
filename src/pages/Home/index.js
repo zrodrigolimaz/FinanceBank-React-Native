@@ -59,9 +59,12 @@ const Home = () => {
   return (
     <View style ={styles.container}>
       <Header name="Rodrigo Lima"></Header>
-      <Accountvalue saldo="60.000,00" />
+
+      <Accountvalue saldo="34.240,00" />
       <Menu/>
+
       <Text style={styles.title}>TRANSAÇÕES RECENTES</Text>
+      
       <FlatList style={styles.list}
         data = {list}
         keyExtractor = {(item) => String(item.id)}

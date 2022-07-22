@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     View,
     Text,
@@ -8,6 +8,8 @@ import {
 
 
 export default function Accountvalue({saldo}) {
+    const [showValue, setShowValue] = useState(false)
+
     return (
         <View style={styles.container}>
             <View style={styles.content}>
@@ -63,7 +65,6 @@ const styles = StyleSheet.create({
     hide: {
         marginTop: 16,
         
-    }
-
-
+    },
+    
 })
