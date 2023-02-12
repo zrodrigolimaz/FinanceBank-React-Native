@@ -21,7 +21,7 @@ Instalação
 Passo a passo de como instalar o projeto.
 
 
-- git clone https://github.com/seu-username/nome-do-projeto.git
+- git clone 
 - cd nome-do-projeto
 - npm install
 - react-native run-ios (para iOS) ou react-native run-android (para Android)
