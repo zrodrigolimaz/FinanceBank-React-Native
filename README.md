@@ -1,34 +1,54 @@
-# Front-end FinanceBank React Native
+# FinanceBank React Native Front-end
 
-<a href="https://imgflip.com/i/7avwzi"><img src="https://i.imgflip.com/7avwzi.jpg" title=""/></a><div><a href=""></a></div>
+This is a React Native financial management app for viewing transactions and statements, with support for filtering by period and transaction type.
 
-A tela de extrato em um aplicativo em React Native pode ser uma representação visual das transações financeiras do usuário. É possível utilizar componentes como FlatList ou ScrollView para exibir uma lista de transações, onde cada item da lista contém informações como a data, descrição, valor e tipo de transação.
+## Description
 
-Para deixar a tela de extrato mais atrativa visualmente, é possível adicionar cores e ícones para diferenciar as transações de débito e crédito, além de utilizar componentes como Card para exibir cada transação de maneira mais organizada.
+The statement screen in this React Native app offers a visual representation of the user's financial transactions. It uses components such as FlatList or ScrollView to display a list of transactions, where each list item contains information such as date, description, value, and transaction type.
 
-Outra funcionalidade interessante é a possibilidade de filtrar as transações por período de tempo ou tipo, o que pode ser implementado com componentes como Picker ou DatePicker.
+Additionally, to make the statement screen more visually appealing, it presents colors and icons to differentiate debit and credit transactions, and uses components such as Card to display each transaction in a more organized way.
 
-Começando
-Estas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste. Veja as notas de implantação para obter informações sobre como implantar o projeto em um sistema ao vivo.
+An interesting feature is the ability to filter transactions by time period or type, implemented with components such as Picker or DatePicker.
 
-Pré-requisitos
-O que você precisa instalar e como instalar antes de instalar o projeto.
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment notes for information on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install and how to install them:
 
 - Node.js v12.16.1
 - React Native CLI v3.0.2
-- Xcode v11.5 ou versão posterior (para desenvolvimento no iOS)
-- Android Studio para desenvolvimento no Android
+- Xcode v11.5 or later (for iOS development)
+- Android Studio (for Android development)
 
-Instalação
-Passo a passo de como instalar o projeto.
+### Installing
 
+A step by step series of examples that tell you how to get a development env running:
 
-- git clone 
-- cd nome-do-projeto
-- npm install
-- react-native run-ios (para iOS) ou react-native run-android (para Android)
+1. Clone the repository:
+git clone https://github.com/your-username/repository-name.git
 
+2. Navigate to the project folder:
+cd repository-name
 
-``
+3. Install dependencies:
+npm install
 
-https://www.figma.com/file/4ocLgneTXMPp2Ray2R5fek/Finance-%40ReactNative?node-id=0%3A1
+4. Run the project on emulator or device:
+- For iOS:react-native run-ios
+- For Android: 
+react-native run-android
+
+## Design
+
+<a href="https://imgflip.com/i/7avwzi"><img src="https://i.imgflip.com/7avwzi.jpg" title=""/></a><div><a href=""></a></div>
+
+Check out the app prototype on Figma:
+
+[FinanceBank React Native on Figma](https://www.figma.com/file/4ocLgneTXMPp2Ray2R5fek/Finance-%40ReactNative?node-id=0%3A1)
+
+## Suggested Repository Title
+
+ReactNative-FinanceBank
